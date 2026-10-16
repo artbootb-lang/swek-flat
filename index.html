@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>СВЭК Системс · Инженеры, которые делают упаковку</title>
+<meta name="description" content="СВЭК: команда инженеров из Plasthold.ru. Толщиномер, ПЛК, HMI, пресс-формы и сервис для производства полимерной упаковки.">
+<script>(function(){var d=document.documentElement;d.classList.add('js');try{if(sessionStorage.getItem('swek_intro'))d.classList.add('nopre');}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Onest:wght@400;500;600;700&family=Unbounded:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style></style>
+</head>
+<body>
+<div id="pre" aria-hidden="true"><iframe data-src="logo.html" title="" tabindex="-1"></iframe><button id="preSkip" type="button">Пропустить</button></div>
+<div id="app" style="width:100%;background:#FBFAF8;color:#1B1917;font-family:'Onest',system-ui,sans-serif;font-size:17px;line-height:1.55">
+<header class="hdr"><div class="hdr-in"><a class="brand" href="index.html" aria-label="СВЭК Системс, на главную"><svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="16" fill="none" stroke="#1B1917" stroke-width="4"/><line x1="14" y1="32" x2="50" y2="32" stroke="#8A8178" stroke-width="2" stroke-dasharray="3 3"/><path d="M14 40 C17 20 21 20 24 33 C27 44 30 42 33 34 C35 28 37 29 39 32 C41 34 43 32 45 32 H50" fill="none" stroke="#B8502E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="display:flex;flex-direction:column;gap:3px"><span style="font-family:'Unbounded',sans-serif;font-size:22px;line-height:1;letter-spacing:.01em">свэк</span><span style="font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.32em;color:#6B635A">системс</span></span></a><nav class="nv" id="navMain" aria-label="Основное меню"><a class="l" href="gauge.html">Толщиномер</a><div class="dd"><a class="" href="hardware.html">Железо</a><div class="dd-m"><a href="hardware.html">Обзор <small>ПЛК · UPL · HMI</small></a><a href="d1.html">ПЛК D1 <small>Cortex-M7</small></a><a href="upl.html">Аплинк UPL <small>мост</small></a><a href="hmi.html">HMI 18″ <small>A733</small></a></div></div><a class="l" href="molds.html">Пресс-формы</a><a class="l" href="service.html">Сервис</a><a class="l" href="control.html">Системы контроля</a><a class="l" href="index.html#about">О нас</a></nav><a class="cta hdr-cta" href="order.html#configurator">Заказать</a><button id="navBtn" aria-label="Меню" aria-expanded="false" aria-controls="navMain"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="#1B1917" stroke-width="2" stroke-linecap="round"><path d="M3 6H19M3 11H19M3 16H19"/></svg></button></div></header>
+<main>
+<section style="position:relative;overflow:hidden;padding:clamp(56px,8vw,104px) 0 40px">
+<div class="glow" style="width:620px;height:620px;left:-180px;top:-220px;background:#F3D9CC;opacity:.7"></div>
+<div class="glow" style="width:560px;height:560px;right:-160px;top:120px;background:#EFE6D6;opacity:.9"></div>
+<div class="wrap" style="position:relative;text-align:center">
+<div class="eyebrow rv" style="margin-bottom:28px">СВЭК · инженеры из Plasthold.ru</div>
+<h1 class="h1 rv" style="font-size:clamp(44px,8.4vw,116px);line-height:.98">Инженеры,<br><span style="color:#B8502E">которые знают,<br>что делают.</span></h1>
+<p class="lead rv" style="max-width:860px;margin:36px auto 0;font-size:clamp(18px,2.1vw,24px)">СВЭК — сильная команда инженеров, выросшая внутри <a href="https://plasthold.ru" style="color:#1B1917;font-weight:600">Plasthold.ru</a>, ведущего производителя полимерной упаковки в России и странах СНГ. Мы делаем измерение, электронику и оснастку для линий, на которых сами работаем каждый день.</p>
+<div class="rv" style="display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:44px">
+<a class="btn btn-primary" href="gauge.html">Смотреть толщиномер</a>
+<a class="btn btn-ghost" href="order.html#configurator">Собрать заявку</a>
+</div>
+</div>
+</section>
+
+<section style="padding:24px 0 72px">
+<div class="wrap">
+<div class="rv" style="position:relative;border-radius:44px;background:#1B1917;color:#FBFAF8;padding:clamp(24px,4vw,48px);overflow:hidden;box-shadow:0 50px 100px -50px rgba(27,25,23,.6)">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 32px">
+<div><div class="cap" style="color:#B5ABA0">Профиль толщины плёнки по ширине · живая картинка</div>
+<div id="lpRead" style="font-size:clamp(44px,7vw,96px);font-weight:700;letter-spacing:-.04em;line-height:1;margin-top:10px;color:#E39A7E">+0,0 %</div></div>
+<div style="text-align:right"><div class="cap" style="color:#B5ABA0">Положение датчика</div><div id="lpPos" style="font-size:26px;font-weight:700;letter-spacing:-.02em;margin-top:6px">0 % ширины</div></div>
+</div>
+<svg id="liveProfile" viewBox="0 0 900 260" width="100%" style="display:block;margin-top:24px" role="img" aria-label="Анимация: профиль толщины плёнки и каретка толщиномера">
+<rect x="0" y="0" width="900" height="260" rx="18" fill="#24201E"/>
+<g stroke="#3A3532" stroke-width="1"><line x1="40" y1="140" x2="860" y2="140" stroke-dasharray="4 6"/><line x1="40" y1="88" x2="860" y2="88"/><line x1="40" y1="192" x2="860" y2="192"/></g>
+<text x="40" y="80" font-family="JetBrains Mono, monospace" font-size="11" fill="#8A8178">+2 %</text>
+<text x="40" y="208" font-family="JetBrains Mono, monospace" font-size="11" fill="#8A8178">−2 %</text>
+<rect x="40" y="6" width="820" height="6" rx="3" fill="#3A3532"/>
+<path class="lp-path" d="" fill="none" stroke="#E39A7E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<line class="lp-stem" x1="100" y1="24" x2="100" y2="140" stroke="#E39A7E" stroke-width="2"/>
+<rect class="lp-car" x="82" y="8" width="36" height="16" rx="5" fill="#B8502E"/>
+<circle class="lp-dot" cx="100" cy="140" r="9" fill="#24201E" stroke="#E39A7E" stroke-width="3.5"/>
+</svg>
+<div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:20px"><span class="dchip">Ёмкостный метод</span><span class="dchip">Лазерный метод</span><span class="dchip">Без контакта с плёнкой</span><span class="dchip">Каретка поперёк ширины</span></div>
+</div>
+</div>
+</section>
+
+<div class="mq" aria-hidden="true"><div class="mq-t"><span>Толщиномер<b>·</b>ПЛК D1<b>·</b>Аплинк UPL<b>·</b>HMI 18″ · A733<b>·</b>Cortex-M7<b>·</b>RS-485<b>·</b>Пресс-формы<b>·</b>Сервис<b>·</b>Plasthold.ru<b>·</b></span><span>Толщиномер<b>·</b>ПЛК D1<b>·</b>Аплинк UPL<b>·</b>HMI 18″ · A733<b>·</b>Cortex-M7<b>·</b>RS-485<b>·</b>Пресс-формы<b>·</b>Сервис<b>·</b>Plasthold.ru<b>·</b></span><span>Толщиномер<b>·</b>ПЛК D1<b>·</b>Аплинк UPL<b>·</b>HMI 18″ · A733<b>·</b>Cortex-M7<b>·</b>RS-485<b>·</b>Пресс-формы<b>·</b>Сервис<b>·</b>Plasthold.ru<b>·</b></span><span>Толщиномер<b>·</b>ПЛК D1<b>·</b>Аплинк UPL<b>·</b>HMI 18″ · A733<b>·</b>Cortex-M7<b>·</b>RS-485<b>·</b>Пресс-формы<b>·</b>Сервис<b>·</b>Plasthold.ru<b>·</b></span></div></div>
+
+<section id="about" class="sec">
+<div class="wrap">
+<div class="eyebrow rv">Кто мы</div>
+<h2 class="h2 rv" style="margin-top:20px;max-width:1000px">Мы не вендор со стороны.<br>Мы сами делаем упаковку.</h2>
+<p class="lead rv" style="max-width:820px;margin-top:24px">Всё началось в производстве. Plasthold.ru выпускает полимерную упаковку для России и стран СНГ. Когда готового инструмента не хватало, инженеры делали его сами. Так появились собственные формы, приборы и контроллеры. Теперь они доступны и вам.</p>
+<div class="fx" style="margin-top:56px;align-items:stretch">
+<div class="card rv" style="flex:1 1 440px;min-width:0;padding:clamp(28px,4vw,48px);background:#1B1917;color:#FBFAF8;border-color:#1B1917;display:flex;flex-direction:column;gap:18px">
+<div class="cap" style="color:#B5ABA0">Основа</div>
+<div style="font-family:'Unbounded',sans-serif;font-size:clamp(30px,4vw,48px);line-height:1;letter-spacing:.01em">Plasthold<span style="color:#E39A7E">.ru</span></div>
+<p class="txt" style="color:#C9C1B6;font-size:18px">Ведущий производитель полимерной упаковки в России и странах СНГ. Термоформовка лотков, экструзия, гранулирование, модификаторы и собственный инструментальный цех.</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px"><span class="dchip">Термоформовка</span><span class="dchip">Экструзия</span><span class="dchip">Гранулирование</span><span class="dchip">Модификаторы</span><span class="dchip">Инструментальный цех</span></div>
+<a href="https://plasthold.ru" class="btn btn-light" style="align-self:flex-start;margin-top:8px">plasthold.ru</a>
+</div>
+<div class="card rv" style="flex:1 1 440px;min-width:0;padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;gap:18px">
+<div class="cap">Команда</div>
+<div style="display:flex;align-items:center;gap:16px"><svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="16" fill="none" stroke="#1B1917" stroke-width="4"/><line x1="14" y1="32" x2="50" y2="32" stroke="#8A8178" stroke-width="2" stroke-dasharray="3 3"/><path d="M14 40 C17 20 21 20 24 33 C27 44 30 42 33 34 C35 28 37 29 39 32 C41 34 43 32 45 32 H50" fill="none" stroke="#B8502E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div style="font-family:'Unbounded',sans-serif;font-size:clamp(30px,4vw,48px);line-height:1">свэк</div></div>
+<p class="txt" style="font-size:18px">Специальное внедренческое экспериментальное конструкторское бюро. Инженеры-электронщики, программисты, конструкторы оснастки и технологи. Всё, что мы продаём, мы сначала запускаем на своих линиях.</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px"><span class="chip"><i></i>Электроника</span><span class="chip"><i></i>Прошивки</span><span class="chip"><i></i>Оснастка</span><span class="chip"><i></i>Технология</span></div>
+</div>
+</div>
+
+<div class="fx" style="margin-top:20px">
+<div class="card rv tile" style="flex:1 1 240px"><div class="num">01</div><div class="ttl">Знаем боль изнутри</div><p class="txt">Простои, брак, разнотолщинность, ручной учёт. Мы с этим живём, а не изучаем по презентациям.</p></div>
+<div class="card rv tile" style="flex:1 1 240px"><div class="num">02</div><div class="ttl">Делаем своё</div><p class="txt">Контроллер, аплинк, панель, прибор и оснастка разработаны у нас. От схемы и прошивки до корпуса и формы.</p></div>
+<div class="card rv tile" style="flex:1 1 240px"><div class="num">03</div><div class="ttl">Проверяем на себе</div><p class="txt">Каждое решение сначала работает на линиях Plasthold.ru. Потом попадает к вам, уже с практикой.</p></div>
+<div class="card rv tile" style="flex:1 1 240px"><div class="num">04</div><div class="ttl">Остаёмся рядом</div><p class="txt">Поддержка идёт напрямую от разработчиков, без цепочки посредников.</p></div>
+</div>
+
+<div class="card rv" style="margin-top:20px;padding:clamp(24px,3.5vw,40px)">
+<div class="cap" style="margin-bottom:18px">Plasthold.ru в цифрах</div>
+<div class="fx" style="gap:28px 40px">
+<div style="flex:1 1 200px"><div class="stat"><span class="ph">[__]</span></div><div class="txt" style="margin-top:8px">лет на рынке</div></div>
+<div style="flex:1 1 200px"><div class="stat"><span class="ph">[__]</span></div><div class="txt" style="margin-top:8px">тонн продукции в месяц</div></div>
+<div style="flex:1 1 200px"><div class="stat"><span class="ph">[__]</span></div><div class="txt" style="margin-top:8px">производственных линий</div></div>
+<div style="flex:1 1 200px"><div class="stat"><span class="ph">[__]</span></div><div class="txt" style="margin-top:8px">стран поставок</div></div>
+</div></div>
+</div>
+</section>
+
+<section class="sec alt">
+<div class="wrap">
+<div class="eyebrow rv">01 · Флагман</div>
+<div class="fx" style="margin-top:20px;gap:40px 64px;align-items:center">
+<div class="c" style="flex:1 1 440px">
+<h2 class="h2 rv">Толщиномер.<br><span style="color:#B8502E">Без контакта.</span></h2>
+<p class="lead rv" style="margin-top:24px">Бесконтактный прибор для плоскощелевой экструзии. Два метода измерения, ёмкостный и лазерный, работают вместе. Прибор видит профиль плёнки по всей ширине и показывает, где пора подкрутить губу.</p>
+<div class="rv" style="display:flex;flex-direction:column;gap:14px;margin-top:32px">
+<div style="display:flex;gap:14px"><span class="num" style="min-width:28px">→</span><span><b>Меньше брака.</b> Отклонение видно сразу, а не после рулона.</span></div>
+<div style="display:flex;gap:14px"><span class="num" style="min-width:28px">→</span><span><b>Экономия сырья.</b> Плёнка идёт ближе к целевой толщине.</span></div>
+<div style="display:flex;gap:14px"><span class="num" style="min-width:28px">→</span><span><b>Своё железо.</b> ПЛК, аплинк и панель собственной разработки.</span></div>
+</div>
+<div class="rv" style="display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px;margin-top:36px"><span style="font-size:clamp(34px,4.4vw,56px);font-weight:700;letter-spacing:-.03em">от 420 000 ₽</span><span class="txt">цена прибора [подтвердить]</span></div>
+<div class="rv" style="display:flex;flex-wrap:wrap;gap:14px;margin-top:28px"><a class="btn btn-primary" href="gauge.html">Подробнее и расчёт окупаемости</a><a class="btn btn-ghost" href="order.html#configurator">Заказать</a></div>
+</div>
+<div class="c rv" style="flex:1 1 440px"><div class="card" style="padding:14px;border-radius:40px"><img src="photo-1.webp" alt="Толщиномер СВЭК на линии" style="display:block;width:100%;height:auto;border-radius:28px"></div></div>
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap">
+<div class="eyebrow rv">02 · Железо</div>
+<h2 class="h2 rv" style="margin-top:20px;max-width:980px">Контроллер, аплинк и панель.<br>Всё своё.</h2>
+<p class="lead rv" style="max-width:820px;margin-top:24px">Три модуля на одной шине RS-485. На них построен и наш толщиномер. Можно взять один модуль в свою систему или собрать связку целиком.</p>
+<div class="fx" style="margin-top:56px;align-items:stretch">
+<a class="card rv lift hcard" href="d1.html" style="flex:1 1 320px;min-width:0;text-decoration:none;color:#1B1917;padding:32px;display:flex;flex-direction:column;gap:14px;background:linear-gradient(180deg,#fff,#F7F3EC)">
+<div class="num">ПЛК D1</div><div class="ttl" style="font-size:28px">Контроллер на Cortex-M7</div>
+<div class="hov" style="max-width:200px;margin:8px auto"><svg viewBox="0 0 240 330" width="100%" role="img" aria-label="ПЛК D1, вид спереди" style="display:block;height:auto"><defs><linearGradient id="hDGl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2B2725"/><stop offset="0.5" stop-color="#0F0D0C"/><stop offset="1" stop-color="#1C1816"/></linearGradient><linearGradient id="hDBd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CF6540"/><stop offset="1" stop-color="#B9512D"/></linearGradient></defs><ellipse cx="120" cy="320" rx="104" ry="8" fill="#1B1917" opacity="0.10"/><rect x="10" y="8" width="220" height="308" rx="20" fill="url(#hDBd)"/><rect x="10" y="8" width="220" height="308" rx="20" fill="none" stroke="#9A4020" stroke-width="1.2"/><rect x="22" y="20" width="152" height="108" rx="7" fill="url(#hDGl)"/><g opacity="0.9"><rect x="30" y="28" width="60" height="6" rx="3" fill="#6B635A"/><path d="M30 100 C46 70 56 112 72 88 S104 64 120 84 S152 100 166 72" fill="none" stroke="#E39A7E" stroke-width="2.4" stroke-linecap="round"/><line x1="30" y1="86" x2="166" y2="86" stroke="#4B4642" stroke-dasharray="3 4"/><rect x="30" y="108" width="36" height="12" rx="3" fill="#3A3532"/><rect x="72" y="108" width="36" height="12" rx="3" fill="#3A3532"/></g><path d="M22 20 H110 L74 128 H22Z" fill="#fff" opacity="0.05"/><circle cx="193" cy="40" r="6" fill="#8E3D1D"/><circle cx="193" cy="40" r="3.2" fill="#7CD65A" class="anim-pulse"/><circle cx="193" cy="62" r="6" fill="#8E3D1D"/><circle cx="193" cy="62" r="3.2" fill="#7CD65A" /><circle cx="193" cy="84" r="6" fill="#8E3D1D"/><circle cx="193" cy="84" r="3.2" fill="#F2C14E" /><circle cx="193" cy="106" r="6" fill="#8E3D1D"/><circle cx="193" cy="106" r="3.2" fill="#F2C14E" /><rect x="22" y="138" width="92" height="160" rx="6" fill="#C45A36"/><g stroke="#A2431F" stroke-width="2" opacity="0.5"><line x1="24.0" y1="142" x2="24.0" y2="294"/><line x1="29.6" y1="142" x2="29.6" y2="294"/><line x1="35.2" y1="142" x2="35.2" y2="294"/><line x1="40.8" y1="142" x2="40.8" y2="294"/><line x1="46.4" y1="142" x2="46.4" y2="294"/><line x1="52.0" y1="142" x2="52.0" y2="294"/><line x1="57.599999999999994" y1="142" x2="57.599999999999994" y2="294"/><line x1="63.199999999999996" y1="142" x2="63.199999999999996" y2="294"/><line x1="68.8" y1="142" x2="68.8" y2="294"/><line x1="74.4" y1="142" x2="74.4" y2="294"/><line x1="80.0" y1="142" x2="80.0" y2="294"/><line x1="85.6" y1="142" x2="85.6" y2="294"/><line x1="91.19999999999999" y1="142" x2="91.19999999999999" y2="294"/><line x1="96.8" y1="142" x2="96.8" y2="294"/><line x1="102.39999999999999" y1="142" x2="102.39999999999999" y2="294"/><line x1="108.0" y1="142" x2="108.0" y2="294"/></g><rect x="64" y="168" width="9" height="26" rx="4.5" fill="#2A2725" stroke="#7A3519" stroke-width="1"/><rect x="66.4" y="172" width="4.2" height="18" rx="2" fill="#0F0D0C"/><rect x="122" y="138" width="98" height="170" rx="9" fill="#B34E2B"/><rect x="130" y="146" width="82" height="154" rx="5" fill="#2E7D2B" opacity="0.18"/><rect x="132" y="148" width="38" height="13" rx="2" fill="#63D144"/><rect x="158" y="148" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="164" cy="154.5" r="2" fill="#1F5C1A"/><rect x="132" y="163" width="38" height="13" rx="2" fill="#63D144"/><rect x="158" y="163" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="164" cy="169.5" r="2" fill="#1F5C1A"/><rect x="132" y="178" width="38" height="13" rx="2" fill="#63D144"/><rect x="158" y="178" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="164" cy="184.5" r="2" fill="#1F5C1A"/><rect x="132" y="193" width="38" height="13" rx="2" fill="#63D144"/><rect x="158" y="193" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="164" cy="199.5" r="2" fill="#1F5C1A"/><rect x="132" y="208" width="38" height="13" rx="2" fill="#63D144"/><rect x="158" y="208" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="164" cy="214.5" r="2" fill="#1F5C1A"/><rect x="132" y="223" width="38" height="13" rx="2" fill="#63D144"/><rect x="158" y="223" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="164" cy="229.5" r="2" fill="#1F5C1A"/><rect x="132" y="238" width="38" height="13" rx="2" fill="#63D144"/><rect x="158" y="238" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="164" cy="244.5" r="2" fill="#1F5C1A"/><rect x="132" y="253" width="38" height="13" rx="2" fill="#63D144"/><rect x="158" y="253" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="164" cy="259.5" r="2" fill="#1F5C1A"/><rect x="132" y="268" width="38" height="13" rx="2" fill="#63D144"/><rect x="158" y="268" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="164" cy="274.5" r="2" fill="#1F5C1A"/><rect x="132" y="283" width="38" height="13" rx="2" fill="#63D144"/><rect x="158" y="283" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="164" cy="289.5" r="2" fill="#1F5C1A"/><rect x="172" y="148" width="38" height="13" rx="2" fill="#63D144"/><rect x="198" y="148" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="204" cy="154.5" r="2" fill="#1F5C1A"/><rect x="172" y="163" width="38" height="13" rx="2" fill="#63D144"/><rect x="198" y="163" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="204" cy="169.5" r="2" fill="#1F5C1A"/><rect x="172" y="178" width="38" height="13" rx="2" fill="#63D144"/><rect x="198" y="178" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="204" cy="184.5" r="2" fill="#1F5C1A"/><rect x="172" y="193" width="38" height="13" rx="2" fill="#63D144"/><rect x="198" y="193" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="204" cy="199.5" r="2" fill="#1F5C1A"/><rect x="172" y="208" width="38" height="13" rx="2" fill="#63D144"/><rect x="198" y="208" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="204" cy="214.5" r="2" fill="#1F5C1A"/><rect x="172" y="223" width="38" height="13" rx="2" fill="#63D144"/><rect x="198" y="223" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="204" cy="229.5" r="2" fill="#1F5C1A"/><rect x="172" y="238" width="38" height="13" rx="2" fill="#63D144"/><rect x="198" y="238" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="204" cy="244.5" r="2" fill="#1F5C1A"/><rect x="172" y="253" width="38" height="13" rx="2" fill="#63D144"/><rect x="198" y="253" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="204" cy="259.5" r="2" fill="#1F5C1A"/><rect x="172" y="268" width="38" height="13" rx="2" fill="#63D144"/><rect x="198" y="268" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="204" cy="274.5" r="2" fill="#1F5C1A"/><rect x="172" y="283" width="38" height="13" rx="2" fill="#63D144"/><rect x="198" y="283" width="12" height="13" rx="2" fill="#3FA52B"/><circle cx="204" cy="289.5" r="2" fill="#1F5C1A"/><rect x="60" y="296" width="54" height="17" rx="3.5" fill="#E9E4DA" stroke="#C9C1B3"/><text x="87.0" y="308.5" font-family="Unbounded, sans-serif" font-size="10" fill="#6B635A" text-anchor="middle">SWEK</text></svg></div>
+<p class="txt">4 независимые линии RS-485, питание 24 В, 8 DI и 8 DO, экран, прошивка через USB Type-C.</p>
+<span style="color:#B8502E;font-weight:600;margin-top:auto">Смотреть D1 →</span></a>
+<a class="card rv lift hcard" href="upl.html" style="flex:1 1 320px;min-width:0;text-decoration:none;color:#1B1917;padding:32px;display:flex;flex-direction:column;gap:14px;background:linear-gradient(180deg,#fff,#F7F3EC)">
+<div class="num">UPL</div><div class="ttl" style="font-size:28px">Аплинк: мост в сеть</div>
+<div class="hov" style="max-width:110px;margin:8px auto"><svg viewBox="0 0 130 330" width="100%" role="img" aria-label="Аплинк UPL, вид спереди" style="display:block;height:auto"><defs><linearGradient id="hUBd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CF6540"/><stop offset="1" stop-color="#B9512D"/></linearGradient></defs><ellipse cx="65" cy="320" rx="56" ry="8" fill="#1B1917" opacity="0.10"/><rect x="10" y="8" width="110" height="308" rx="18" fill="url(#hUBd)"/><rect x="10" y="8" width="110" height="308" rx="18" fill="none" stroke="#9A4020" stroke-width="1.2"/><rect x="22" y="22" width="86" height="96" rx="10" fill="#1E1B19"/><circle cx="30" cy="32" r="3" fill="#0A0908"/><circle cx="100" cy="32" r="3" fill="#0A0908"/><circle cx="65" cy="70" r="31" fill="#2B2725"/><circle cx="65" cy="70" r="25" fill="#171413"/><rect x="45" y="53" width="40" height="34" rx="3" fill="#0A0908"/><rect x="51" y="58" width="28" height="14" rx="2" fill="#2B2725"/><rect x="22" y="128" width="86" height="96" rx="10" fill="#1E1B19"/><circle cx="30" cy="138" r="3" fill="#0A0908"/><circle cx="100" cy="138" r="3" fill="#0A0908"/><circle cx="65" cy="176" r="31" fill="#2B2725"/><circle cx="65" cy="176" r="25" fill="#171413"/><rect x="45" y="159" width="40" height="34" rx="3" fill="#0A0908"/><rect x="51" y="164" width="28" height="14" rx="2" fill="#2B2725"/><circle cx="80" cy="66" r="3" fill="#7CD65A" class="anim-pulse"/><circle cx="80" cy="172" r="3" fill="#F2C14E" class="anim-pulse"/><rect x="22" y="236" width="86" height="64" rx="6" fill="#C45A36"/><g stroke="#A2431F" stroke-width="2" opacity="0.5"><line x1="24.0" y1="240" x2="24.0" y2="296"/><line x1="29.6" y1="240" x2="29.6" y2="296"/><line x1="35.2" y1="240" x2="35.2" y2="296"/><line x1="40.8" y1="240" x2="40.8" y2="296"/><line x1="46.4" y1="240" x2="46.4" y2="296"/><line x1="52.0" y1="240" x2="52.0" y2="296"/><line x1="57.599999999999994" y1="240" x2="57.599999999999994" y2="296"/><line x1="63.199999999999996" y1="240" x2="63.199999999999996" y2="296"/><line x1="68.8" y1="240" x2="68.8" y2="296"/><line x1="74.4" y1="240" x2="74.4" y2="296"/><line x1="80.0" y1="240" x2="80.0" y2="296"/><line x1="85.6" y1="240" x2="85.6" y2="296"/><line x1="91.19999999999999" y1="240" x2="91.19999999999999" y2="296"/><line x1="96.8" y1="240" x2="96.8" y2="296"/><line x1="102.39999999999999" y1="240" x2="102.39999999999999" y2="296"/></g><rect x="38" y="294" width="54" height="17" rx="3.5" fill="#E9E4DA" stroke="#C9C1B3"/><text x="65.0" y="306.5" font-family="Unbounded, sans-serif" font-size="10" fill="#6B635A" text-anchor="middle">SWEK</text></svg></div>
+<p class="txt">Узкий модуль с двумя портами RJ45. Соединяет шину RS-485 с внешним миром. Подробности по запросу.</p>
+<span style="color:#B8502E;font-weight:600;margin-top:auto">Смотреть UPL →</span></a>
+<a class="card rv lift hcard" href="hmi.html" style="flex:1 1 320px;min-width:0;text-decoration:none;color:#1B1917;padding:32px;display:flex;flex-direction:column;gap:14px;background:linear-gradient(180deg,#fff,#F7F3EC)">
+<div class="num">HMI 18″</div><div class="ttl" style="font-size:28px">Панель оператора на A733</div>
+<div class="hov" style="margin:8px auto;width:100%;max-width:330px"><svg viewBox="0 0 480 340" width="100%" role="img" aria-label="Панель оператора HMI 18 дюймов" style="display:block;height:auto"><defs><linearGradient id="hHBz" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2E2A27"/><stop offset="1" stop-color="#171413"/></linearGradient><clipPath id="hHCl"><rect x="22" y="22" width="436" height="268" rx="10"/></clipPath></defs><ellipse cx="240" cy="326" rx="190" ry="9" fill="#1B1917" opacity="0.10"/><rect x="6" y="6" width="468" height="300" rx="26" fill="url(#hHBz)"/><rect x="6" y="6" width="468" height="300" rx="26" fill="none" stroke="#4B4642" stroke-width="1.5"/><g clip-path="url(#hHCl)"><g transform="translate(22 22)"><rect width="436" height="268" fill="#0F0D0C"/><rect width="436" height="30" fill="#1B1917"/><rect x="12" y="10" width="54" height="10" rx="5" fill="#B8502E"/><rect x="330" y="10" width="46" height="10" rx="5" fill="#3A3532"/><circle cx="398" cy="15" r="5" fill="#7CD65A"/><rect x="408" y="10" width="16" height="10" rx="3" fill="#3A3532"/><rect y="30" width="64" height="238" fill="#151210"/><rect x="12" y="44" width="40" height="30" rx="8" fill="#B8502E"/><rect x="12" y="84" width="40" height="30" rx="8" fill="#26221F"/><rect x="12" y="124" width="40" height="30" rx="8" fill="#26221F"/><rect x="12" y="164" width="40" height="30" rx="8" fill="#26221F"/><rect x="12" y="204" width="40" height="30" rx="8" fill="#26221F"/><rect x="76" y="42" width="348" height="106" rx="10" fill="#1B1917"/><path d="M86 124 C110 82 130 130 156 100 S206 66 232 96 S284 130 312 94 S364 80 414 104" fill="none" stroke="#E39A7E" stroke-width="3" stroke-linecap="round"/><line x1="86" y1="104" x2="414" y2="104" stroke="#4B4642" stroke-dasharray="4 5"/><rect x="76" y="160" width="110" height="46" rx="8" fill="#1B1917"/><rect x="88" y="170" width="40" height="6" rx="3" fill="#4B4642"/><rect x="88" y="184" width="62" height="12" rx="4" fill="#EDE6DA"/><rect x="195" y="160" width="110" height="46" rx="8" fill="#1B1917"/><rect x="207" y="170" width="40" height="6" rx="3" fill="#4B4642"/><rect x="207" y="184" width="62" height="12" rx="4" fill="#E39A7E"/><rect x="314" y="160" width="110" height="46" rx="8" fill="#1B1917"/><rect x="326" y="170" width="40" height="6" rx="3" fill="#4B4642"/><rect x="326" y="184" width="62" height="12" rx="4" fill="#EDE6DA"/><rect x="76" y="216" width="348" height="40" rx="8" fill="#1B1917"/><rect x="88" y="238" width="8" height="6" rx="2" fill="#B8502E" opacity="0.5"/><rect x="102" y="231" width="8" height="13" rx="2" fill="#B8502E" opacity="0.7"/><rect x="116" y="224" width="8" height="20" rx="2" fill="#B8502E" opacity="0.9"/><rect x="130" y="235" width="8" height="9" rx="2" fill="#B8502E" opacity="0.5"/><rect x="144" y="228" width="8" height="16" rx="2" fill="#B8502E" opacity="0.7"/><rect x="158" y="221" width="8" height="23" rx="2" fill="#B8502E" opacity="0.9"/><rect x="172" y="232" width="8" height="12" rx="2" fill="#B8502E" opacity="0.5"/><rect x="186" y="225" width="8" height="19" rx="2" fill="#B8502E" opacity="0.7"/><rect x="200" y="236" width="8" height="8" rx="2" fill="#B8502E" opacity="0.9"/><rect x="214" y="229" width="8" height="15" rx="2" fill="#B8502E" opacity="0.5"/><rect x="228" y="222" width="8" height="22" rx="2" fill="#B8502E" opacity="0.7"/><rect x="242" y="233" width="8" height="11" rx="2" fill="#B8502E" opacity="0.9"/><rect x="256" y="226" width="8" height="18" rx="2" fill="#B8502E" opacity="0.5"/><rect x="270" y="237" width="8" height="7" rx="2" fill="#B8502E" opacity="0.7"/><rect x="284" y="230" width="8" height="14" rx="2" fill="#B8502E" opacity="0.9"/><rect x="298" y="223" width="8" height="21" rx="2" fill="#B8502E" opacity="0.5"/><rect x="312" y="234" width="8" height="10" rx="2" fill="#B8502E" opacity="0.7"/><rect x="326" y="227" width="8" height="17" rx="2" fill="#B8502E" opacity="0.9"/><rect x="340" y="238" width="8" height="6" rx="2" fill="#B8502E" opacity="0.5"/><rect x="354" y="231" width="8" height="13" rx="2" fill="#B8502E" opacity="0.7"/><rect x="368" y="224" width="8" height="20" rx="2" fill="#B8502E" opacity="0.9"/><rect x="382" y="235" width="8" height="9" rx="2" fill="#B8502E" opacity="0.5"/><rect x="396" y="228" width="8" height="16" rx="2" fill="#B8502E" opacity="0.7"/><rect x="410" y="221" width="8" height="23" rx="2" fill="#B8502E" opacity="0.9"/></g></g><path d="M22 22 H260 L180 290 H22Z" fill="#fff" opacity="0.035" clip-path="url(#hHCl)"/><circle cx="240" cy="298" r="3" fill="#B8502E"/><rect x="170" y="306" width="140" height="14" rx="6" fill="#B9512D"/></svg></div>
+<p class="txt">Восьмиядерный процессор Allwinner A733. Профиль, тренды, рецепты и события на одном экране.</p>
+<span style="color:#B8502E;font-weight:600;margin-top:auto">Смотреть HMI →</span></a>
+</div>
+
+<div class="dark rv" style="margin-top:20px;padding:clamp(28px,5vw,64px);position:relative;overflow:hidden">
+<div class="eyebrow">Мощность</div>
+<h3 style="margin:16px 0 0;font-size:clamp(28px,4vw,48px);line-height:1.05;letter-spacing:-.03em;font-weight:700;max-width:760px">Вычислитель с запасом на вашу задачу.</h3>
+<div class="fx" style="margin-top:40px;gap:32px 48px">
+<div style="flex:1 1 180px"><div class="stat" data-count="4">4</div><div class="txt" style="margin-top:10px">независимые линии RS-485 на каждом D1</div></div>
+<div style="flex:1 1 180px"><div class="stat"><span data-count="8">8</span>+<span data-count="8">8</span></div><div class="txt" style="margin-top:10px">дискретных входов и выходов</div></div>
+<div style="flex:1 1 180px"><div class="stat"><span data-count="24">24</span> В</div><div class="txt" style="margin-top:10px">стандартное промышленное питание</div></div>
+<div style="flex:1 1 180px"><div class="stat" style="font-size:clamp(34px,4.4vw,60px)">M7 + A733</div><div class="txt" style="margin-top:10px">контроллер реального времени и мощная панель</div></div>
+</div>
+<div style="margin-top:40px;display:flex;flex-direction:column;gap:14px;max-width:760px">
+<div><div class="cap" style="margin-bottom:8px">Cortex-M7 · реальное время</div><div class="lb"><i class="b1"></i></div></div>
+<div><div class="cap" style="margin-bottom:8px">Allwinner A733 · визуализация и данные</div><div class="lb"><i class="b3"></i></div></div>
+</div>
+<div style="margin-top:32px"><a class="btn btn-light" href="hardware.html">Вся архитектура</a></div>
+</div>
+</div>
+</section>
+
+<section class="sec alt">
+<div class="wrap">
+<div class="eyebrow rv">03 · Пресс-формы</div>
+<h2 class="h2 rv" style="margin-top:20px;max-width:980px">Оснастка для термоформовки.<br><span style="color:#B8502E">Из нашего цеха.</span></h2>
+<p class="lead rv" style="max-width:820px;margin-top:24px">Матрицы, пуансоны и сменные части для лотков и упаковки. У нас свой инструментальный цех, поэтому мы проектируем форму под вашу машину, ваш лоток и ваш материал.</p>
+<div class="rv video" style="margin-top:48px"><iframe src="mold.html" title="Анимация: разбор пресс-формы, формовка ленты, готовые лотки" loading="lazy"></iframe></div>
+<div class="cap rv" style="margin-top:16px;text-align:center">Разбор формы · формовка ленты · готовые лотки</div>
+<div class="rv" style="display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:36px"><a class="btn btn-primary" href="molds.html">Как мы делаем формы</a><a class="btn btn-ghost" href="order.html#configurator">Прислать образец лотка</a></div>
+</div>
+</section>
+
+<section class="sec">
+<div class="wrap">
+<div class="fx" style="align-items:stretch;gap:20px">
+<div class="card rv" style="flex:1 1 440px;min-width:0;padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;gap:18px">
+<div class="eyebrow">04 · Сервис</div>
+<h2 class="h2" style="font-size:clamp(30px,4vw,48px)">Линия работает.<br>Без сюрпризов.</h2>
+<p class="txt" style="font-size:18px">Пусконаладка, обучение, плановое обслуживание, ремонт и консалтинг. Приезжают люди, которые сами эксплуатируют такие линии.</p>
+<a class="btn btn-ghost" href="service.html" style="align-self:flex-start;margin-top:auto">Сервис и консалтинг</a>
+</div>
+<div class="card rv" style="flex:1 1 440px;min-width:0;padding:clamp(28px,4vw,48px);display:flex;flex-direction:column;gap:18px">
+<div class="eyebrow">05 · Системы контроля</div>
+<h2 class="h2" style="font-size:clamp(30px,4vw,48px)">Производство,<br>которое видно.</h2>
+<p class="txt" style="font-size:18px">От датчиков в цехе до экранов и отчётов. Сначала цех, потом экран: всё, что живёт в таблицах и памяти, становится данными.</p>
+<a class="btn btn-ghost" href="control.html" style="align-self:flex-start;margin-top:auto">Системы контроля</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec alt">
+<div class="wrap">
+<div class="eyebrow rv">Купить</div>
+<h2 class="h2 rv" style="margin-top:20px;max-width:900px">Выберите, соберите заявку.<br>Дальше мы.</h2>
+<div class="fx" style="margin-top:48px">
+<div class="card rv tile" style="flex:1 1 240px"><div class="num">01</div><div class="ttl">Соберите заявку</div><p class="txt">Отметьте позиции в конфигураторе: прибор, модули, форма, сервис.</p></div>
+<div class="card rv tile" style="flex:1 1 240px"><div class="num">02</div><div class="ttl">Уточним задачу</div><p class="txt">Короткий разговор: линия, материал, ширина, интерфейсы.</p></div>
+<div class="card rv tile" style="flex:1 1 240px"><div class="num">03</div><div class="ttl">Договор и оплата</div><p class="txt">Счёт, договор, график. Условия <span class="ph">[уточнить]</span>.</p></div>
+<div class="card rv tile" style="flex:1 1 240px"><div class="num">04</div><div class="ttl">Поставка и запуск</div><p class="txt">Доставка, пусконаладка, обучение. Поддержка остаётся с вами.</p></div>
+</div>
+<div class="rv" style="display:flex;flex-wrap:wrap;gap:14px;margin-top:40px"><a class="btn btn-primary" href="order.html#configurator">Собрать заявку</a><a class="btn btn-ghost" href="order.html#steps">Как проходит заказ</a></div>
+</div>
+</section>
+</main>
+<footer id="contact" style="width:100%;color:#1B1917;background:#FBFAF8;padding:24px 0 0"><div style="max-width:1280px;margin:0 auto;padding:0 24px"><div style="display:flex;flex-wrap:wrap;gap:48px;padding:clamp(28px,5vw,56px);background:#F3EFE8;border-radius:40px;border:1px solid #E9E3D9"><div style="flex:1 1 380px;min-width:0"><div class="eyebrow" style="margin-bottom:20px">Связаться</div><h2 style="margin:0 0 20px;font-size:clamp(34px,4.6vw,56px);line-height:1.04;letter-spacing:-.03em;font-weight:700">Расскажите<br>о задаче.</h2><p style="margin:0 0 32px;font-size:19px;line-height:1.5;color:#6B635A;max-width:420px">Образец лотка, линия, которую надо измерить, или процесс, который хочется видеть. Ответим по существу.</p><div style="display:flex;flex-direction:column;gap:12px;font-size:16px;color:#3E3934"><div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px"><span style="color:#6B635A;min-width:84px">Телефон</span><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#6B635A;border:1px dashed #B5AB9C;border-radius:6px;padding:2px 10px">[+7 ___ ___-__-__]</span></div><div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px"><span style="color:#6B635A;min-width:84px">Почта</span><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#6B635A;border:1px dashed #B5AB9C;border-radius:6px;padding:2px 10px">[email]</span></div><div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px"><span style="color:#6B635A;min-width:84px">Telegram</span><span style="font-family:'JetBrains Mono',monospace;font-size:14px;color:#6B635A;border:1px dashed #B5AB9C;border-radius:6px;padding:2px 10px">[@аккаунт]</span></div></div></div><form id="ftForm" style="flex:1 1 400px;min-width:0;padding:32px;background:#fff;border-radius:28px;border:1px solid #E9E3D9;display:flex;flex-direction:column;gap:18px"><label style="display:flex;flex-direction:column;gap:6px;font-weight:500;font-size:15px">Имя<input class="fld" name="n" type="text" placeholder="Как к вам обращаться"></label><label style="display:flex;flex-direction:column;gap:6px;font-weight:500;font-size:15px">Телефон или Telegram<input class="fld" name="c" type="text" placeholder="Как с вами связаться"></label><label style="display:flex;flex-direction:column;gap:6px;font-weight:500;font-size:15px">Что нужно сделать<textarea class="fld" name="t" rows="4" placeholder="Толщиномер, ПЛК, форма, система контроля, сервис" style="padding:14px 16px;resize:vertical"></textarea></label><button type="submit" class="btn btn-primary" style="min-height:54px;font-size:17px">Отправить</button></form></div><div style="display:flex;flex-wrap:wrap;gap:40px 64px;justify-content:space-between;padding:56px 8px 24px"><div style="flex:1 1 260px;min-width:0;display:flex;flex-direction:column;gap:14px"><div style="display:flex;align-items:center;gap:12px"><svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="16" fill="none" stroke="#1B1917" stroke-width="4"/><line x1="14" y1="32" x2="50" y2="32" stroke="#8A8178" stroke-width="2" stroke-dasharray="3 3"/><path d="M14 40 C17 20 21 20 24 33 C27 44 30 42 33 34 C35 28 37 29 39 32 C41 34 43 32 45 32 H50" fill="none" stroke="#B8502E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="display:flex;flex-direction:column;gap:3px"><span style="font-family:'Unbounded',sans-serif;font-size:22px;line-height:1">свэк</span><span style="font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:.32em;color:#6B635A">системс</span></span></div><p style="margin:0;font-size:14px;line-height:1.5;color:#6B635A;max-width:320px">Команда инженеров из <a href="https://plasthold.ru" style="color:#B8502E">Plasthold.ru</a>. Измерение, электроника, оснастка и сервис для производства полимерной упаковки.</p></div><div style="display:flex;flex-wrap:wrap;gap:40px 72px"><div style="display:flex;flex-direction:column;gap:10px;font-size:15px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#6B635A;margin-bottom:4px">Направления</span><a href="gauge.html" style="color:#1B1917;text-decoration:none">Толщиномер</a><a href="hardware.html" style="color:#1B1917;text-decoration:none">Железо: ПЛК, UPL, HMI</a><a href="molds.html" style="color:#1B1917;text-decoration:none">Пресс-формы</a><a href="service.html" style="color:#1B1917;text-decoration:none">Сервис и консалтинг</a><a href="control.html" style="color:#1B1917;text-decoration:none">Системы контроля</a></div><div style="display:flex;flex-direction:column;gap:10px;font-size:15px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#6B635A;margin-bottom:4px">Железо</span><a href="hardware.html" style="color:#1B1917;text-decoration:none">Обзор</a><a href="d1.html" style="color:#1B1917;text-decoration:none">ПЛК D1</a><a href="upl.html" style="color:#1B1917;text-decoration:none">Аплинк UPL</a><a href="hmi.html" style="color:#1B1917;text-decoration:none">HMI 18″</a></div><div style="display:flex;flex-direction:column;gap:10px;font-size:15px"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#6B635A;margin-bottom:4px">Купить</span><a href="order.html#configurator" style="color:#1B1917;text-decoration:none">Собрать заявку</a><a href="order.html#steps" style="color:#1B1917;text-decoration:none">Как проходит заказ</a><a href="order.html#delivery" style="color:#1B1917;text-decoration:none">Оплата и доставка</a><a href="order.html#faq" style="color:#1B1917;text-decoration:none">Вопросы</a><a href="index.html#about" style="color:#1B1917;text-decoration:none">О компании</a></div></div></div><div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;padding:24px 8px 40px;border-top:1px solid #E9E3D9;font-size:13px;color:#6B635A"><span>© 2026 СВЭК Системс</span><span>Специальное внедренческое экспериментальное конструкторское бюро</span></div></div></footer><script>
+(function(){var f=document.getElementById('ftForm');if(!f)return;
+f.addEventListener('submit',function(e){e.preventDefault();
+var n=f.elements.n.value,c=f.elements.c.value,t=f.elements.t.value;
+var body='Заявка с сайта СВЭК Системс\n\nИмя: '+n+'\nКонтакт: '+c+'\n\n'+t;
+window.location.href='mailto:?subject='+encodeURIComponent('Заявка с сайта СВЭК Системс')+'&body='+encodeURIComponent(body);});})();
+</script>
+</div>
+<script src="dc-lite.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
